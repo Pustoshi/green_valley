@@ -1,0 +1,36 @@
+.gallery {
+
+	@media (min-width: 768px) {
+
+		#gallery-main-pict {
+			display: block;
+		}
+	}
+
+	@media (min-width: 1200px) {
+
+		&__inner {
+			width: 1180px;
+			margin: 0 auto;
+		}
+	}
+
+	&__inner {
+		width: 100%;
+	}
+
+	#gallery-main-pict {
+		display: none;
+	}
+
+	&__thumb {
+		width: 100%;
+		text-align: center;
+		opacity: 0.8;
+	}
+
+	&__thumb:hover {
+		opacity: 1;
+		transition-duration: 0.2s;
+	}
+}

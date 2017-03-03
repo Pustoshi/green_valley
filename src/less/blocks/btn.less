@@ -1,0 +1,66 @@
+.btn {
+	text-align: center;
+	white-space: nowrap;
+	touch-action: manipulation;
+	cursor: pointer;
+	font-size: @font-size--small;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 1.125em;
+	color: @white;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&--bd-radius {
+		border-radius: 30px;
+	}
+
+	&--bg-green {
+		background-color: @green-main;
+		padding: 12px 30px;
+		border: 2px solid @white;
+	}
+
+	&--bg-green:hover {
+		background-color: @white;
+		color: #0ab89d;
+		transition-duration: 0.25s;
+	}
+
+	&--bg-orange {
+		padding: 13px 30px;
+		background-color: @orange-lighten;
+	}
+
+	&--bg-orange:hover {
+		background-color: @orange-main;
+		transition-duration: 0.25s;
+	}
+
+	&--icon-calendar {
+		position: relative;
+		padding-left: 50px;
+	}
+
+	&--icon-calendar:before {
+		content: '';
+		position: absolute;
+		bottom: 14px;
+		left: 23px;
+		background-image: url(../img/spritesheet.png);
+		width: 17px;
+		height: 17px;
+		background-position: -155px 103px;
+	}
+
+	&--bg-greener {
+		width: 100%;
+		background-color: @green-main;
+		padding: 20px 0px;
+		border: none;
+	}
+
+	&--bg-greener:hover {
+		background-color: @green-darken;
+	}
+}

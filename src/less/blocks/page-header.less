@@ -1,0 +1,79 @@
+.page-header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: @grey-darkest;
+
+	@media (min-width: 768px) {
+
+		&__contacts {
+			display: none;
+		}
+
+		&__inner .btn {
+			display: none;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		display: flex;
+
+		.main-logo {
+			text-align: left;
+		}
+
+		&__inner {
+			margin: 0 80px;
+			display: inline-flex;
+		}
+
+		&__inner .btn {
+			display: block;
+		}
+
+		&__contacts {
+			display: block;
+			float: left;
+			margin-left: 40px;
+			margin-top: 8px;
+		}
+
+		&__phone-link {
+			text-decoration: none;
+			font-size: 1.125rem;
+			font-weight: bold;
+			letter-spacing: 1px;
+			color: @grey-darkest;
+		}
+
+		&__address {
+			font-size: @font-size--small;
+			letter-spacing: 1px;
+			line-height: 1.125rem;
+			color: @grey-darken;
+		}
+
+		&__button {
+			float: right;
+			margin-left: 30px;
+			margin-top: 7px;
+		}
+	}
+
+	&__inner {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.main-logo {
+		display: block;
+		text-align: center;
+	}
+
+	&__contacts {
+		display: none;
+	}
+
+	&__inner .btn {
+		display: none;
+	}
+}

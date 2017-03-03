@@ -1,0 +1,103 @@
+.location {
+	padding-bottom: 47px;
+
+	&__way-option {
+		padding-top: 88px;
+		width: 230px;
+		text-align: center;
+	}
+
+	&__inner {
+		margin-top: 40px;
+	}
+
+	&__headline {
+		text-align: center;
+		font-size: 1.625em;
+		font-weight: normal;
+		color: @grey-darkest;
+	}
+
+	&__map {
+		width: 100%;
+	}
+
+	&__map iframe {
+		width: 100%;
+		display: block;
+	}
+
+	&__way-option {
+		margin: 0 auto;
+		color: @grey-darkest;
+		line-height: 1.375em;
+	}
+
+	&__way-option-title {
+		font-size: @font-size--small;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0;
+		padding-bottom: 15px;
+	}
+
+	&__way-option-title {
+		position: relative;
+	}
+
+	&__way-option-title-bus:before {
+		content: '';
+		position: absolute;
+		bottom: 55px;
+		background-image: url(../img/spritesheet.png);
+		width: 60px;
+		height: 30px;
+		background-position: 5px -57px;
+	}
+
+	&__way-option-title-electro:before {
+		content: '';
+		position: absolute;
+		bottom: 55px;
+		background-image: url(../img/spritesheet.png);
+		width: 60px;
+		height: 30px;
+		background-position: 253px 55px;
+	}
+
+	&__way-option-trip {
+		font-size: @font-size;
+		margin: 0;
+	}
+
+	@media (min-width: 768px) {
+
+		&__headline {
+			font-size: @font-size--biggest;
+		}
+
+		&__way-option {
+			width: 600px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+
+		&__inner {
+			width: 1180px;
+			margin: 0 auto;
+		}
+
+		&__options {
+			display: flex;
+		}
+
+		&__way-option {
+			width: 420px;
+		}
+
+		&__way-option-trip {
+			text-align: left;
+		}
+	}
+}
